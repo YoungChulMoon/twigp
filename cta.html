@@ -1,0 +1,116 @@
+<div class="container">
+    <div class="cta-content" data-aos="fade-up">
+        <h2>지금 Twig에 투자하세요</h2>
+        <p>일상이 돈이 되는 비밀, Twig의 성장 여정에 함께하세요. 초기 투자자에게 제공되는 10% 보너스 토큰의 기회를 놓치지 마세요!</p>
+        <div class="cta-countdown">
+            <div class="countdown-title">1차 투자 마감까지</div>
+            <div class="countdown-timer" id="countdown">
+                <div class="countdown-item">
+                    <div class="countdown-value" id="countdown-days">00</div>
+                    <div class="countdown-label">일</div>
+                </div>
+                <div class="countdown-separator">:</div>
+                <div class="countdown-item">
+                    <div class="countdown-value" id="countdown-hours">00</div>
+                    <div class="countdown-label">시간</div>
+                </div>
+                <div class="countdown-separator">:</div>
+                <div class="countdown-item">
+                    <div class="countdown-value" id="countdown-minutes">00</div>
+                    <div class="countdown-label">분</div>
+                </div>
+                <div class="countdown-separator">:</div>
+                <div class="countdown-item">
+                    <div class="countdown-value" id="countdown-seconds">00</div>
+                    <div class="countdown-label">초</div>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn btn-lg btn-accent cta-btn" data-toggle="modal" data-target="#investModal">지금 투자하기</a>
+    </div>
+    
+    <div class="cta-features" data-aos="fade-up" data-aos-delay="200">
+        <div class="cta-feature">
+            <div class="feature-icon">
+                <i class="fas fa-shield-alt"></i>
+            </div>
+            <div class="feature-text">
+                <h4>안전한 투자</h4>
+                <p>검증된 팀과 투명한 프로세스로 안전하게 투자하세요.</p>
+            </div>
+        </div>
+        <div class="cta-feature">
+            <div class="feature-icon">
+                <i class="fas fa-rocket"></i>
+            </div>
+            <div class="feature-text">
+                <h4>높은 성장 잠재력</h4>
+                <p>글로벌 확장을 통한 놀라운 성장 가능성을 확인하세요.</p>
+            </div>
+        </div>
+        <div class="cta-feature">
+            <div class="feature-icon">
+                <i class="fas fa-hand-holding-usd"></i>
+            </div>
+            <div class="feature-text">
+                <h4>소액 투자 가능</h4>
+                <p>100만 원부터 시작하는 투자로 누구나 참여할 수 있습니다.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 투자 모달 -->
+<div class="modal" id="investModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Twig 투자 신청</h3>
+                <button class="modal-close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="investForm">
+                    <div class="form-group">
+                        <label for="investor-name">이름</label>
+                        <input type="text" id="investor-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="investor-email">이메일</label>
+                        <input type="email" id="investor-email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="investor-phone">연락처</label>
+                        <input type="tel" id="investor-phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="investor-amount">투자 금액</label>
+                        <select id="investor-amount">
+                            <option value="1000000">100만 원</option>
+                            <option value="3000000">300만 원</option>
+                            <option value="5000000" selected>500만 원</option>
+                            <option value="10000000">1,000만 원</option>
+                            <option value="custom">직접 입력</option>
+                        </select>
+                    </div>
+                    <div class="form-group" id="custom-amount-group" style="display: none;">
+                        <label for="custom-amount">직접 입력 (원)</label>
+                        <input type="number" id="custom-amount" min="1000000" step="1000000">
+                    </div>
+                    <div class="form-group">
+                        <label for="investor-stage">투자 단계</label>
+                        <select id="investor-stage">
+                            <option value="1" selected>1차 (10% 보너스)</option>
+                            <option value="2">2차 (5% 보너스)</option>
+                            <option value="3">3차 (보너스 없음)</option>
+                        </select>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" id="terms-check" required>
+                        <label for="terms-check">투자 위험성 및 이용약관에 동의합니다.</label>
+                    </div>
+                    <button type="submit" class="btn btn-accent btn-block">투자 신청하기</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

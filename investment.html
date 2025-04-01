@@ -1,0 +1,136 @@
+<div class="container">
+    <div class="section-title">
+        <h2>투자 정보</h2>
+    </div>
+    <div class="section-subtitle">
+        Twig에 투자하고 함께 성장하세요. 다양한 단계에서 안정적이고 지속적인 수익 창출 기회를 누리세요.
+    </div>
+    
+    <div class="investment-details" data-aos="fade-up">
+        <h3>투자 개요</h3>
+        <p>Twig는 총 16.8억 원을 3단계로 모집합니다. 투자금은 플랫폼 개발, 마케팅, 글로벌 확장에 사용됩니다.</p>
+        <div class="investment-metrics">
+            <div class="metric">
+                <div class="metric-value"><span class="counter" data-target="16">0</span>.<span class="counter" data-target="8">0</span>억 원</div>
+                <div class="metric-label">총 모집 금액</div>
+            </div>
+            <div class="metric">
+                <div class="metric-value"><span class="counter" data-target="500">0</span>만 원</div>
+                <div class="metric-label">1인당 기본 투자 금액</div>
+            </div>
+            <div class="metric">
+                <div class="metric-value"><span class="counter" data-target="100">0</span>만 원</div>
+                <div class="metric-label">최소 투자 금액</div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="investment-tiers">
+        <div class="tier-card" data-aos="fade-up">
+            <div class="tier-title">1차 투자 (2025 Q3)</div>
+            <div class="tier-price">5.6억 원</div>
+            <div class="tier-bonus">+10% 보너스 토큰</div>
+            <ul class="tier-features">
+                <li>초기 투자자 전용 혜택</li>
+                <li>테스트 출시 이전 참여 기회</li>
+                <li>투자자 전용 커뮤니티 초대</li>
+                <li>Twig 베타 테스터 자격</li>
+                <li>플랫폼 내 VIP 배지</li>
+            </ul>
+            <a href="#cta" class="btn btn-lg btn-accent">투자하기</a>
+        </div>
+        
+        <div class="tier-card featured" data-aos="fade-up" data-aos-delay="200">
+            <div class="featured-label">인기</div>
+            <div class="tier-title">2차 투자 (2025 Q4)</div>
+            <div class="tier-price">5.6억 원</div>
+            <div class="tier-bonus">+5% 보너스 토큰</div>
+            <ul class="tier-features">
+                <li>한국 출시 이전 참여 기회</li>
+                <li>투자자 전용 커뮤니티 초대</li>
+                <li>플랫폼 내 프리미엄 배지</li>
+                <li>초기 사용자 데이터 리포트 제공</li>
+                <li>광고주 네트워킹 초대</li>
+            </ul>
+            <a href="#cta" class="btn btn-lg">투자하기</a>
+        </div>
+        
+        <div class="tier-card" data-aos="fade-up" data-aos-delay="400">
+            <div class="tier-title">3차 투자 (2026 Q1)</div>
+            <div class="tier-price">5.6억 원</div>
+            <div class="tier-bonus">보너스 없음</div>
+            <ul class="tier-features">
+                <li>글로벌 확장 단계 참여</li>
+                <li>투자자 전용 커뮤니티 초대</li>
+                <li>플랫폼 내 스페셜 배지</li>
+                <li>분기별 성과 보고서 제공</li>
+                <li>프로모션 코드 제공</li>
+            </ul>
+            <a href="#cta" class="btn btn-lg btn-outline">투자하기</a>
+        </div>
+    </div>
+    
+    <div class="token-distribution" data-aos="fade-up">
+        <h3>토큰 분배 계획</h3>
+        <div class="distribution-chart">
+            <div class="chart-container">
+                <canvas id="distributionChart"></canvas>
+            </div>
+            <div class="chart-legend">
+                <div class="legend-item">
+                    <div class="legend-color" style="background-color: rgba(106, 152, 240, 0.8);"></div>
+                    <div class="legend-text">투자자 (40%)</div>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background-color: rgba(157, 141, 241, 0.8);"></div>
+                    <div class="legend-text">팀 & 어드바이저 (20%)</div>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background-color: rgba(243, 137, 185, 0.8);"></div>
+                    <div class="legend-text">플랫폼 보상 (25%)</div>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background-color: rgba(108, 234, 212, 0.8);"></div>
+                    <div class="legend-text">마케팅 & 파트너십 (10%)</div>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background-color: rgba(255, 203, 71, 0.8);"></div>
+                    <div class="legend-text">예비 (5%)</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="investment-calculator" data-aos="fade-up">
+        <h3>수익 계산기</h3>
+        <div class="calculator">
+            <div class="calc-form">
+                <div class="form-group">
+                    <label for="investment-amount">투자 금액 (원)</label>
+                    <input type="number" id="investment-amount" value="5000000" min="1000000" step="1000000">
+                </div>
+                <div class="form-group">
+                    <label for="investment-stage">투자 단계</label>
+                    <select id="investment-stage">
+                        <option value="1">1차 (10% 보너스)</option>
+                        <option value="2">2차 (5% 보너스)</option>
+                        <option value="3">3차 (보너스 없음)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="investment-exit">예상 회수 시점</label>
+                    <select id="investment-exit">
+                        <option value="1">2026년 1월 (0.75달러)</option>
+                        <option value="2">2026년 3월 (1.2달러)</option>
+                    </select>
+                </div>
+                <button id="calculate-btn" class="btn">계산하기</button>
+            </div>
+            <div class="calc-result">
+                <div class="result-label">예상 수익:</div>
+                <div class="result-value" id="result-value">0원</div>
+                <div class="result-roi" id="result-roi">(0% 수익률)</div>
+            </div>
+        </div>
+    </div>
+</div>

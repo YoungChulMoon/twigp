@@ -1,0 +1,212 @@
+/* 기본 설정 및 변수 */
+:root {
+    --bg-primary: #121420;
+    --bg-secondary: #1A1B26;
+    --bg-card: #1E2030;
+    --text-primary: #FFFFFF;
+    --text-secondary: rgba(255, 255, 255, 0.7);
+    --text-tertiary: rgba(255, 255, 255, 0.5);
+    
+    --accent-blue: #6A98F0;
+    --accent-blue-transparent: rgba(106, 152, 240, 0.1);
+    --accent-purple: #9D8DF1;
+    --accent-purple-transparent: rgba(157, 141, 241, 0.1);
+    --accent-pink: #F389B9;
+    --accent-pink-transparent: rgba(243, 137, 185, 0.1);
+    --accent-mint: #6CEAD4;
+    --accent-mint-transparent: rgba(108, 234, 212, 0.1);
+    
+    --success: #72E5BE;
+    --warning: #FFCB47;
+    --error: #FF6B6B;
+    
+    --gradient-main: linear-gradient(135deg, var(--accent-blue), var(--accent-purple), var(--accent-pink));
+    --gradient-button: linear-gradient(90deg, var(--accent-blue), var(--accent-purple));
+    --gradient-card: linear-gradient(135deg, rgba(106, 152, 240, 0.1), rgba(157, 141, 241, 0.1));
+}
+
+/* 기본 리셋 및 설정 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: var(--accent-blue) var(--bg-secondary);
+}
+
+body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* 타이포그래피 */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 4rem;
+    letter-spacing: -1px;
+    background: var(--gradient-main);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h2 {
+    font-size: 2.5rem;
+    letter-spacing: -0.5px;
+    color: var(--text-primary);
+    margin-bottom: 40px;
+}
+
+h3 {
+    font-size: 1.75rem;
+    color: var(--text-primary);
+    margin-bottom: 20px;
+}
+
+h4 {
+    font-size: 1.3rem;
+    color: var(--text-primary);
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 1.5rem;
+    color: var(--text-secondary);
+}
+
+a {
+    color: var(--accent-blue);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: var(--accent-purple);
+}
+
+ul, ol {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+/* 기본 섹션 스타일 */
+.section-title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-title h2 {
+    position: relative;
+    display: inline-block;
+}
+
+.section-title h2:after {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 4px;
+    background: var(--gradient-main);
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
+}
+
+.section-subtitle {
+    font-size: 1.2rem;
+    color: var(--text-tertiary);
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 60px;
+}
+
+/* 버튼 스타일 */
+.btn {
+    display: inline-block;
+    padding: 12px 32px;
+    background: var(--gradient-button);
+    color: white;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(106, 152, 240, 0.3);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    font-size: 1rem;
+}
+
+.btn:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--gradient-button);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: -1;
+    transform: scaleX(-1);
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 7px 20px rgba(106, 152, 240, 0.4);
+}
+
+.btn:hover:before {
+    opacity: 1;
+}
+
+.btn-outline {
+    background: transparent;
+    border: 2px solid var(--accent-blue);
+    color: var(--accent-blue);
+    box-shadow: none;
+}
+
+.btn-outline:hover {
+    background: var(--accent-blue-transparent);
+    color: white;
+    border-color: transparent;
+}
+
+.btn-lg {
+    padding: 16px 40px;
+    font-size: 1.1rem;
+}
+
+.btn-accent {
+    background: linear-gradient(90deg, var(--accent-mint), var(--accent-blue));
+    box-shadow: 0 4px 15px rgba(108, 234, 212, 0.3);
+}
+
+.btn-accent:before {
+    background: linear-gradient(90deg, var(--accent-blue), var(--accent-mint));
+}
+
+.btn-accent:hover {
+    box-shadow: 0 7px 20px rgba(108, 234, 212, 0.4);
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+    text-align: center;
+}

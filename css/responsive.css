@@ -1,0 +1,364 @@
+/* 반응형 스타일 */
+
+/* 태블릿 및 작은 노트북 화면 (1200px 이하) */
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 95%;
+    }
+    
+    .hero-graphic {
+        right: 2%;
+    }
+}
+
+/* 태블릿 (992px 이하) */
+@media screen and (max-width: 992px) {
+    h1 {
+        font-size: 3.5rem;
+    }
+    
+    h2 {
+        font-size: 2.2rem;
+    }
+    
+    .hero {
+        padding-top: 100px;
+        height: auto;
+        min-height: 100vh;
+    }
+    
+    .hero-content {
+        max-width: 100%;
+        text-align: center;
+        margin-top: 50px;
+    }
+    
+    .hero-btns {
+        justify-content: center;
+    }
+    
+    .hero-stats {
+        justify-content: center;
+    }
+    
+    .hero-graphic {
+        position: relative;
+        right: auto;
+        top: auto;
+        transform: none;
+        width: 100%;
+        height: 400px;
+        margin-top: 50px;
+    }
+    
+    .roadmap-item:nth-child(odd) .roadmap-content,
+    .roadmap-item:nth-child(even) .roadmap-content {
+        width: 80%;
+        left: 10%;
+    }
+    
+    .roadmap-item:nth-child(odd) .roadmap-date,
+    .roadmap-item:nth-child(even) .roadmap-date {
+        left: auto;
+        right: auto;
+        top: -40px;
+        position: relative;
+        margin: 0 auto 20px;
+    }
+    
+    .roadmap:before {
+        left: 0;
+        transform: none;
+    }
+    
+    .roadmap-dot {
+        left: 0 !important;
+        transform: none !important;
+    }
+    
+    .tier-card.featured {
+        transform: none;
+    }
+    
+    .tier-card.featured:hover {
+        transform: translateY(-10px);
+    }
+}
+
+/* 대형 모바일 (768px 이하) */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 3rem;
+    }
+    
+    h2 {
+        font-size: 2rem;
+    }
+    
+    .section-title h2 {
+        font-size: 1.8rem;
+    }
+    
+    .section-subtitle {
+        font-size: 1rem;
+    }
+    
+    .nav-links {
+        display: none;
+    }
+    
+    .mobile-menu-btn {
+        display: block;
+    }
+    
+    .hero-btns {
+        flex-direction: column;
+    }
+    
+    .hero-stats {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .hero-phone {
+        width: 240px;
+        height: 500px;
+    }
+    
+    .benefit-flow {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .benefit-flow:before {
+        width: 2px;
+        height: 80%;
+        top: 60px;
+        left: 50%;
+        right: auto;
+        transform: translateX(-50%);
+    }
+    
+    .flow-arrow {
+        display: block;
+        transform: rotate(90deg);
+    }
+    
+    .stories-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .story-card {
+        max-width: 100%;
+    }
+    
+    .investment-metrics {
+        flex-direction: column;
+    }
+    
+    .metric {
+        min-width: 100%;
+    }
+    
+    .investment-tiers {
+        grid-template-columns: 1fr;
+    }
+    
+    .calculator {
+        padding: 20px;
+    }
+    
+    .milestone-counter {
+        flex-direction: column;
+    }
+    
+    .milestone {
+        width: 100%;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .milestone:last-child {
+        border-bottom: none;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    
+    .countdown-timer {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .countdown-item {
+        flex: 0 0 40%;
+        margin-bottom: 20px;
+    }
+    
+    .countdown-separator {
+        display: none;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+    }
+    
+    .footer-column {
+        width: 100%;
+        padding-right: 0;
+    }
+    
+    .footer-bottom {
+        flex-direction: column;
+    }
+    
+    .footer-bottom-links {
+        margin-top: 20px;
+        justify-content: center;
+    }
+    
+    .cta-features {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .cta-feature {
+        max-width: 100%;
+    }
+}
+
+/* 중소형 모바일 (576px 이하) */
+@media screen and (max-width: 576px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    h2 {
+        font-size: 1.8rem;
+    }
+    
+    .section-title h2 {
+        font-size: 1.6rem;
+    }
+    
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .tagline {
+        font-size: 1rem;
+    }
+    
+    .hero-desc {
+        font-size: 1rem;
+    }
+    
+    .hero-phone {
+        width: 200px;
+        height: 420px;
+    }
+    
+    .app-header {
+        top: 20px;
+    }
+    
+    .app-content {
+        top: 70px;
+    }
+    
+    .app-title {
+        font-size: 1rem;
+    }
+    
+    .roadmap-item:nth-child(odd) .roadmap-content,
+    .roadmap-item:nth-child(even) .roadmap-content {
+        width: 100%;
+        left: 0;
+        padding: 20px;
+    }
+    
+    .roadmap-milestone {
+        font-size: 1.1rem;
+    }
+    
+    .faq-question {
+        font-size: 1rem;
+    }
+    
+    .modal-dialog {
+        width: 95%;
+    }
+    
+    .newsletter-form {
+        flex-direction: column;
+    }
+    
+    .newsletter-form input {
+        border-radius: 8px;
+        margin-bottom: 10px;
+    }
+    
+    .newsletter-form button {
+        border-radius: 8px;
+        width: 100%;
+    }
+}
+
+/* 초소형 모바일 (375px 이하) */
+@media screen and (max-width: 375px) {
+    h1 {
+        font-size: 2.2rem;
+    }
+    
+    h2 {
+        font-size: 1.6rem;
+    }
+    
+    .btn {
+        padding: 10px 25px;
+        font-size: 0.9rem;
+    }
+    
+    .btn-lg {
+        padding: 12px 30px;
+        font-size: 1rem;
+    }
+    
+    .hero-phone {
+        width: 180px;
+        height: 380px;
+    }
+    
+    .concept-card {
+        padding: 20px;
+    }
+    
+    .concept-card h3 {
+        font-size: 1.3rem;
+    }
+    
+    .tier-title {
+        font-size: 1.3rem;
+    }
+    
+    .tier-price {
+        font-size: 2rem;
+    }
+    
+    .result-value {
+        font-size: 2rem;
+    }
+    
+    .countdown-value {
+        font-size: 2rem;
+        min-width: 60px;
+    }
+    
+    .feature-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+        margin-right: 15px;
+    }
+}
