@@ -164,7 +164,7 @@ nav {
 
 /* 페르소나 선택기 */
 .persona-selector {
-    position: fixed;
+    position: absolute;
     top: 70px; /* 헤더 높이보다 약간 아래로 조정 */
     left: 0;
     width: 100%;
