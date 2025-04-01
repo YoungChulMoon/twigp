@@ -164,6 +164,7 @@ nav {
 
 /* 페르소나 선택기 */
 .persona-selector {
+    position: fixed;
     padding-top: 90px; 
     top: 90px;
     left: 0;
