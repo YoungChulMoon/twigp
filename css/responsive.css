@@ -122,7 +122,7 @@
     
     .hero-phone {
         width: 240px;
-        height: 500px;
+        height: 480px; /* 높이 줄임 */
     }
     
     .benefit-flow {
@@ -226,6 +226,42 @@
     .cta-feature {
         max-width: 100%;
     }
+    
+    /* 히어로 섹션 패딩 조정 - 페르소나 선택기를 고려 */
+    .hero {
+        padding-top: 150px; /* 헤더(70px) + 페르소나 선택기(60px) + 여유공간 */
+    }
+    
+    /* 앱 카드 스타일 조정 */
+    .app-card {
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+    
+    .app-card-title {
+        font-size: 0.9rem;
+    }
+    
+    .app-card-content {
+        font-size: 0.8rem;
+        margin: 8px 0;
+    }
+    
+    /* 앱 액션 영역 조정 */
+    .app-action {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .app-reward {
+        margin-top: 5px;
+    }
+    
+    /* 앱 내부 요소 위치 조정 */
+    .app-content {
+        top: 60px;
+        padding: 0 12px;
+    }
 }
 
 /* 중소형 모바일 (576px 이하) */
@@ -264,7 +300,8 @@
     }
     
     .app-content {
-        top: 70px;
+        top: 55px;
+        padding: 0 10px;
     }
     
     .app-title {
@@ -303,6 +340,27 @@
         border-radius: 8px;
         width: 100%;
     }
+    
+    /* 앱 카드 요소 더 축소 */
+    .app-card {
+        padding: 12px;
+        margin-bottom: 12px;
+    }
+    
+    .app-card-title {
+        font-size: 0.85rem;
+    }
+    
+    .app-card-content {
+        font-size: 0.75rem;
+        margin: 6px 0;
+    }
+    
+    /* 앱 버튼 크기 조정 */
+    .app-btn {
+        padding: 6px 12px;
+        font-size: 0.8rem;
+    }
 }
 
 /* 초소형 모바일 (375px 이하) */
@@ -327,7 +385,7 @@
     
     .hero-phone {
         width: 180px;
-        height: 380px;
+        height: 370px; /* 더 줄임 */
     }
     
     .concept-card {
@@ -360,5 +418,28 @@
         height: 40px;
         font-size: 1.2rem;
         margin-right: 15px;
+    }
+    
+    /* 앱 타이틀 크기 축소 */
+    .app-title {
+        font-size: 0.85rem;
+        margin-bottom: 8px;
+    }
+    
+    /* 앱 내부 여백 최소화 */
+    .app-content {
+        top: 50px;
+        padding: 0 8px;
+    }
+    
+    /* 앱 카드 간격 더 축소 */
+    .app-card {
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    
+    /* 앱 리워드 크기 축소 */
+    .app-reward {
+        font-size: 0.7rem;
     }
 }
