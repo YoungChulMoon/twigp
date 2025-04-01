@@ -13,14 +13,14 @@ section {
     position: relative;
 }
 
-/* 헤더 */
+/* 헤더 부분 수정 - z-index 증가 */
 header {
     padding: 20px 0;
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
-    z-index: 1000;
+    z-index: 1001; /* 증가: 페르소나 선택기(999)보다 높게 */
     background-color: rgba(18, 20, 32, 0.8);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
@@ -162,20 +162,19 @@ nav {
     color: var(--accent-blue);
 }
 
-/* 페르소나 선택기 */
+/* 페르소나 선택기 수정 */
 .persona-selector {
-    position: absolute;
-    top: 70px; /* 헤더 높이보다 약간 아래로 조정 */
+    position: fixed;
+    top: 70px; /* 헤더 높이에 맞게 조정 */
     left: 0;
     width: 100%;
     background-color: rgba(18, 20, 32, 0.8);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    z-index: 999;
-    padding: 15px 0; /* 패딩 유지 */
+    z-index: 999; /* 헤더보다 낮게 유지 */
+    padding: 15px 0;
     display: flex;
     justify-content: center;
-    /* margin-top 제거 - fixed 위치에서는 불필요 */
 }
 
 .persona-tabs {
