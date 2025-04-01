@@ -165,18 +165,17 @@ nav {
 /* 페르소나 선택기 */
 .persona-selector {
     position: fixed;
-    padding-top: 90px; 
-    top: 90px;
+    top: 70px; /* 헤더 높이보다 약간 아래로 조정 */
     left: 0;
     width: 100%;
     background-color: rgba(18, 20, 32, 0.8);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     z-index: 999;
-    padding: 15px 0;
+    padding: 15px 0; /* 패딩 유지 */
     display: flex;
     justify-content: center;
-    margin-top: 80px; /* 헤더 높이에 맞게 조정 */
+    /* margin-top 제거 - fixed 위치에서는 불필요 */
 }
 
 .persona-tabs {
